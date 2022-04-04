@@ -38,7 +38,7 @@ CMD ["npm", "start"]
 `;
 
 // template name
-exports.name = "node-16-lts";
+exports.name = "exoframe-template-node-16-lts";
 
 // function to check if the template fits this recipe
 exports.checkTemplate = async ({ tempDockerDir, folder }) => {
