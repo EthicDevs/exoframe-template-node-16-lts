@@ -15,4 +15,8 @@ $ jq '.template |= "exoframe-template-node-16-lts"' json | tee exoframe.json
 $ exoframe deploy --update # (or no --update; as you wish)
 ```
 
+## See also
+
+- [exoframe-template-nginx-alpine-spa](https://www.npmjs.com/package/exoframe-template-nginx-alpine-spa)
+
 [exoframe]: https://github.com/exoframejs
