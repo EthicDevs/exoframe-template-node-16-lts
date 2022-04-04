@@ -1,6 +1,6 @@
 {
   "name": "exoframe-template-node-16-lts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Node.JS 16 LTS Alpine (node:lts-alpine) deployment template for exoframe",
   "main": "index.js",
   "license": "MIT",
