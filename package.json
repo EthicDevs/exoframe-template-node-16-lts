@@ -1,0 +1,17 @@
+{
+  "name": "@ethicdevs/exoframe-template-node-16-lts",
+  "version": "0.1.0",
+  "description": "Node.JS 16 LTS Alpine (node:lts-alpine) deployment template for exoframe",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [],
+  "author": "William Nemencha <contact@wnemencha.me>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethicdevs/exoframe-template-node-16-lts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ethicdevs/exoframe-template-node-16-lts/issues"
+  },
+  "homepage": "https://github.com/ethicdevs/exoframe-template-node-16-lts#readme"
+}
