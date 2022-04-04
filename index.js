@@ -38,7 +38,7 @@ CMD ["npm", "start"]
 `;
 
 // template name
-exports.name = "node";
+exports.name = "node-16-lts";
 
 // function to check if the template fits this recipe
 exports.checkTemplate = async ({ tempDockerDir, folder }) => {
@@ -74,7 +74,7 @@ exports.executeTemplate = async ({
     const dfPath = path.join(tempDockerDir, folder, "Dockerfile");
     fs.writeFileSync(dfPath, dockerfile, "utf-8");
     util.writeStatus(resultStream, {
-      message: "Deploying Node.js project..",
+      message: "Deploying Node.JS LTS Alpine (16) project..",
       level: "info",
     });
 
