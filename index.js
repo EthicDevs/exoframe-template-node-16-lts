@@ -6,7 +6,7 @@ const yarnOrNpm = ({ hasYarn, hasLock }) => {
   let installString = "COPY package.json /usr/src/app/";
 
   if (hasYarn) {
-    installString += `\nCOPY yarn.lock /usr/src/app/\nRUN yarn --silent`;
+    installString += `\nCOPY yarn.lock /usr/src/app/\nRUN yarn`;
   } else if (hasLock) {
     installString += `\nCOPY package-lock.json /usr/src/app/\nRUN npm ci --silent`;
   } else {
@@ -22,6 +22,10 @@ const nodeDockerfile = ({ hasYarn, hasLock }) =>
 # create folder and set it as workdir
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
+
+# Install native dependencies (for postgresql)
+RUN apt-get update
+RUN apt-get install libpq-dev g++ make
 
 # copy package and yarn files to cache deps install
 ${yarnOrNpm({ hasYarn, hasLock })}
